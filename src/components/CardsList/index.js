@@ -3,12 +3,12 @@ import React, { useState, useEffect } from 'react';
 
 const CardsList = () => {
     const cardValues = [
-        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624853/image6_hhafmq.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690626110/image1_az4bah.jpg',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image5_thzuas.png',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image3_hgdjvu.jpg',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image4_tyhchx.jpg',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image2_eizquy.jpg',
-        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624853/image6_hhafmq.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690626110/image1_az4bah.jpg',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image5_thzuas.png',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image3_hgdjvu.jpg',
         'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image4_tyhchx.jpg',
