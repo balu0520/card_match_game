@@ -2,7 +2,18 @@ import './index.css'
 import React, { useState, useEffect } from 'react';
 
 const CardsList = () => {
-    const cardValues = ['A', 'B', 'C', 'D', 'E', 'F', 'A', 'B', 'C', 'D', 'E', 'F']; 
+    const cardValues = [
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624853/image6_hhafmq.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image5_thzuas.png',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image3_hgdjvu.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image4_tyhchx.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image2_eizquy.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624853/image6_hhafmq.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image5_thzuas.png',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624752/image3_hgdjvu.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image4_tyhchx.jpg',
+        'https://res.cloudinary.com/daz94wyq4/image/upload/v1690624751/image2_eizquy.jpg'
+    ];
     const [cards, setCards] = useState([]);
     const [previousCard, setPreviousCard] = useState(null);
 
@@ -67,10 +78,11 @@ const CardsList = () => {
                         onClick={() => handleCardClick(index)}
                     >
                         {(card.isMatched && card.isOpen) && (
-                            <div className={`container-1 ${card.isMatched ? 'value': ''}`}>{card.isMatched ? card.value : ''}</div>
+                            <div className={`container-1 ${card.isMatched ? 'value': ''}`}>{card.isMatched ?  <img src={card.value} alt="card img" className='card-image'/> : ''}
+                            </div>
                         )}
                          {(!card.isMatched && card.isOpen) && (
-                            <div className={`container-1 ${card.isOpen ? '': ''}`}>{card.isOpen ? card.value : 'Closed'}</div>
+                            <div className={`container-1 ${card.isOpen ? '': ''}`}>{card.isOpen ? <img src={card.value} alt="card img" className='card-image'/> : 'Closed'}</div>
                         )}
                         {(!card.isMatched && !card.isOpen) && (
                             <div className="container-1">{card.isOpen ? '' : 'Closed'}</div>
